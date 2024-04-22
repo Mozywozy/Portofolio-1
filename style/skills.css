@@ -1,0 +1,70 @@
+.animated {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container-skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card-skill {
+    position: relative;
+    perspective: 1000px;
+    cursor: pointer;
+    border: 2px solid transparent; /* Tambahkan border dengan warna transparan */
+    border-radius: 5px;
+    animation: slideIn 0.5s ease forwards;
+}
+
+.card-skill:hover {
+     transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    border-color: rgb(5, 29, 165); /* Ubah warna border menjadi hitam saat dihover */
+}
+
+.card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    padding-top: 40px;
+    border: 2px solid transparent; /* Tambahkan border dengan warna transparan */
+    border-radius: 5px;
+}
+
+.card-skill:hover .card-back {
+    display: flex;
+    transform: rotateY(0deg); 
+    animation: flipBack 0.5s forwards;
+}
+
+@keyframes flipBack {
+    from {
+        transform: rotateY(180deg);
+    }
+    to {
+        transform: rotateY(0deg);
+    }
+}

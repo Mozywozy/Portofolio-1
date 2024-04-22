@@ -1,0 +1,47 @@
+ .hero .container {
+    opacity: 0; 
+    transform: translateY(-50px); 
+    transition: opacity 0.9s ease, transform 0.9s ease; 
+}
+
+.hero .container.animated {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+#orggila {
+    transition: transform 0.3s ease; 
+}
+
+#orggila:hover {
+    transform: scale(0.8); 
+}
+
+.about {
+    padding: 80px 0;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 1.0s ease, transform 1.0s ease; 
+}
+
+.about.show {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+@keyframes vibrate {
+    0% {
+      transform: translateX(-2px);
+    }
+    50% {
+      transform: translateX(2px);
+    }
+    100% {
+      transform: translateX(-2px);
+    }
+  }
+  
+  .text h1 {
+    animation: vibrate 0.3s infinite;
+  }

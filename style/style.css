@@ -1,0 +1,552 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* particle style */
+.wrapper {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  .wrapper h1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: rgb(83, 83, 83);
+    font-size: 40px;
+    font-weight: 888;
+    text-transform: uppercase;
+  }
+  .wrapper div {
+    height: 60px;
+    width: 60px;
+    border: 2px solid rgba(68, 67, 67, 0.7);
+    border-radius: 50px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation: 4s linear infinite;
+  }
+  div .dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    background: rgba(94, 92, 92, 0.5);
+    position: absolute;
+    top: 20%;
+    right: 20%;
+  }
+  .wrapper div:nth-child(1) {
+    top: 20%;
+    left: 20%;
+    animation: animate 8s linear infinite;
+  }
+  .wrapper div:nth-child(2) {
+    top: 60%;
+    left: 80%;
+    animation: animate 10s linear infinite;
+  }
+  .wrapper div:nth-child(3) {
+    top: 40%;
+    left: 40%;
+    animation: animate 3s linear infinite;
+  }
+  .wrapper div:nth-child(4) {
+    top: 66%;
+    left: 30%;
+    animation: animate 7s linear infinite;
+  }
+  .wrapper div:nth-child(5) {
+    top: 90%;
+    left: 10%;
+    animation: animate 9s linear infinite;
+  }
+  .wrapper div:nth-child(6) {
+    top: 30%;
+    left: 60%;
+    animation: animate 5s linear infinite;
+  }
+  .wrapper div:nth-child(7) {
+    top: 70%;
+    left: 20%;
+    animation: animate 8s linear infinite;
+  }
+  .wrapper div:nth-child(8) {
+    top: 75%;
+    left: 60%;
+    animation: animate 10s linear infinite;
+  }
+  .wrapper div:nth-child(9) {
+    top: 50%;
+    left: 50%;
+    animation: animate 6s linear infinite;
+  }
+  .wrapper div:nth-child(10) {
+    top: 45%;
+    left: 20%;
+    animation: animate 10s linear infinite;
+  }
+  .wrapper div:nth-child(11) {
+    top: 10%;
+    left: 90%;
+    animation: animate 9s linear infinite;
+  }
+  .wrapper div:nth-child(12) {
+    top: 20%;
+    left: 70%;
+    animation: animate 7s linear infinite;
+  }
+  .wrapper div:nth-child(13) {
+    top: 20%;
+    left: 20%;
+    animation: animate 8s linear infinite;
+  }
+  .wrapper div:nth-child(14) {
+    top: 60%;
+    left: 5%;
+    animation: animate 6s linear infinite;
+  }
+  .wrapper div:nth-child(15) {
+    top: 90%;
+    left: 80%;
+    animation: animate 9s linear infinite;
+  }
+  @keyframes animate {
+    0% {
+      transform: scale(0) translateY(0) rotate(70deg);
+    }
+    100% {
+      transform: scale(1.3) translateY(-100px) rotate(360deg);
+    }
+  }
+  /* end */
+  
+
+/* Body */
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Header */
+nav {
+    color: black;
+    display: flex;
+    gap: 45px;
+    text-align: center;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    background: white;
+    z-index: 1000; 
+    padding: 10px 45px;
+    border-radius: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    border-radius: 20px;
+    width: 90px;
+}
+/* end header */
+
+/* Hero section */
+.hero {
+    margin-top: 5%;
+    position: relative;
+    height: 300px;
+}
+
+.hero .container {
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#orggila {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px; 
+    height: auto;
+    max-width: 100%; 
+    max-height: 100%;
+    object-fit: cover; 
+    z-index: 1; 
+}
+
+.hero h1 {
+    font-size: 115px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+/* end hero section */
+
+/* About section */
+.about {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about .container {
+    max-width: 800px;
+}
+
+.about h2{
+    font-weight: bold; 
+    text-align: center; 
+    font-size:40px;
+}
+
+.about p {
+    text-align: center; 
+}
+
+.buttons {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10%;
+}
+/* end about */
+
+
+/* skill section */
+.skills{
+    margin-top: 10%;
+}
+
+
+.container-skills {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    margin-top: 10%;
+}
+
+.title-skills {
+    margin-top: 5%;
+    font-weight: bold; 
+    text-align: center; 
+    font-size:40px;
+}
+
+.card-skill {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.card-skill img {
+    margin-top: 10%;
+    padding-bottom: 40px;
+    width: 50px; 
+    height: 90px;
+}
+/* end skills */
+
+
+
+/* projek start */
+.container-projek{
+    margin-top: 5%;
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+.projek{
+    margin-top: 50px;
+}
+
+.title-projek{
+    font-weight: bold; 
+    text-align: center; 
+    font-size:40px;
+    margin-bottom: 5%;
+}
+
+.card-projek img{
+    width: 100%;
+}
+
+.card-projek{
+    width: 25%;     
+}
+
+.body-projek{
+    text-align: center;
+}
+
+.card-projek {
+    transition: transform 0.3s ease;
+    border: 1px solid transparent;
+  }
+  
+  .card-projek:hover {
+    transform: translateY(-20px);
+    border: 1px solid #ccc; /* Ubah warna dan ukuran border sesuai kebutuhan */
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  }
+  
+/* end projek */
+
+/* kontak start */
+#kontak{
+    display: flex;
+    margin-top: 10%;
+    padding: 25px 70px ;
+    background-color: white;
+}
+
+.kontak-form,.kontak-bio{
+    flex: 3;
+    padding: 10px 20px 0px;
+}
+
+.kontak-bio{
+    flex: 1;
+}
+
+.kontak-form > .card-contact > h3{
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 5px 5px 0px 0px;
+    font-size: 35px;
+}
+
+.kontak-form > .card-contact > h3::after{
+    content: ' ';
+    display: block;
+    width: 60px;
+    height: 5px;
+    margin: auto;
+    margin-top: 15px;
+    background-color: #333;
+}
+
+.card-contact{
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 4px rgba(0,0,0,0.2);
+}
+
+.form-group{
+    margin: 30px 40px;
+}
+
+input,textarea{
+    width: 100%;
+    padding:10px;
+    border-style: none;
+    border: 1px solid #8f8f8f;
+    border-radius: 5px;
+}
+
+label{
+    display: block;
+    margin-bottom:10px;
+}
+
+input.btn-primary{
+    border-style: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 45px;
+    border: 2px solid #0F2167;
+}
+
+input.btn-primary:hover{
+    background-color: white;
+    color: #45cef8;
+    border: 2px solid #45cef8;
+}
+
+.form-group > p{
+    color: #8f8f8f; 
+    font-size: 14px;
+}
+
+.profile-kontak{
+    object-fit: cover;
+    margin-left: 27%;
+    height: 140px;
+    width: 140px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    box-shadow: 0 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.kontak-bio{
+    text-align: center;
+}
+
+.kontak-bio > .card-contact{
+    padding:10px 25px;
+    position: relative;
+}
+
+.kontak-bio > .card::after{
+    content: ' ';
+    display: block;
+    height: 130px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px 5px 0 0;
+}
+
+.text-muted{
+    color: #8f8f8f;
+    font-size: 12px;
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+
+.table-responsive{
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.kontak-bio > table{
+    border-spacing: 0px;
+    width: auto;
+    border: 2px solid #f7f7f7;
+    margin-bottom: 55px;
+}
+
+tr,th,td{
+    text-align: left;
+    padding: 10px;
+}
+
+tr:nth-child(even){
+    background-color: #ffffff;
+}
+
+tr:nth-child(odd){
+    background-color: #f7f7f7;
+}
+
+.kontak-bio:hover .card-contact {
+    animation: shake 0.5s ease;
+    animation: scaleAndBorder 0.3s ease forwards;
+    border: 2px solid #000;
+}
+
+@keyframes scaleAndBorder {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+.kontak-form .card-contact {
+    transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.kontak-form .card-contact:hover {
+    transform: scale(1.1);
+    border: 2px solid #000;
+}
+
+/* end kontak */
+
+/* Responsive style */
+/* Untuk layar dengan lebar maksimum 768px */
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 80px;
+    }
+
+    .buttons {
+        margin-top: 20px;
+    }
+
+    .card-skill img {
+        margin-top: 20px;
+        padding-bottom: 20px;
+        width: 40px; 
+        height: 70px;
+    }
+
+    .container-projek {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-projek {
+        width: 80%; 
+        margin-bottom: 30px;
+    }
+
+    .kontak-form,.kontak-bio{
+        flex-direction: column;
+        padding: 25px 10px;
+    }
+
+    .profile-kontak{
+        margin-left: 0;
+    }
+}
+
+/* Untuk layar dengan lebar maksimum 576px */
+@media screen and (max-width: 576px) {
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .buttons {
+        margin-top: 10px;
+    }
+
+    .card-skill img {
+        margin-top: 10px;
+        padding-bottom: 10px;
+        width: 30px; 
+        height: 50px;
+    }
+
+    .container-projek {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-projek {
+        width: 90%; 
+        margin-bottom: 20px;
+    }
+
+    .kontak-form,.kontak-bio{
+        padding: 5px;
+    }
+
+    .profile-kontak{
+        margin-left: 0;
+    }
+}

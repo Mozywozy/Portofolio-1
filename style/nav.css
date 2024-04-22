@@ -1,0 +1,35 @@
+nav a {
+    color: black;
+    position: relative;
+    transition: color 0.3s ease, background-color 0.3s ease; 
+}
+
+nav a:hover {
+    color: white; 
+}
+
+nav a.active {
+    color: white; 
+    background-color: black;
+}
+
+nav a:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 125%;
+    height: 110%;
+    background-color: transparent;
+    z-index: -1;
+    border-radius: 100px;
+    transition: all 0.3s ease-in; /* Animasi transisi untuk hover */
+    transform: scale(1.0); /* Efek scaling saat dihover */
+}
+
+/* Animasi efek scaling saat hover */
+nav a:hover::before,
+nav a.active::before {
+    background-color: black;
+    transform: scale(1);
+}

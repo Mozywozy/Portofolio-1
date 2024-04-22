@@ -1,0 +1,110 @@
+/* Untuk semua layar */
+@media screen and (max-width: 992px) {
+    nav {
+        padding: 10px 20px; /* Sesuaikan padding navigasi */
+        gap: 15px; /* Sesuaikan jarak antar elemen navigasi */
+    }
+
+    .hero .container {
+        padding-top: 80px; /* Sesuaikan jarak padding atas di bagian hero */
+    }
+
+    .hero h1 {
+        font-size: 60px; /* Sesuaikan ukuran font di bagian hero */
+    }
+
+    .about .container {
+        padding: 50px 20px; /* Sesuaikan padding di bagian about */
+    }
+
+    .about h2 {
+        font-size: 28px; /* Sesuaikan ukuran font h2 di bagian about */
+    }
+
+    .about p {
+        font-size: 14px; /* Sesuaikan ukuran font paragraf di bagian about */
+    }
+
+    .container-skills {
+        grid-template-columns: repeat(2, 1fr); /* Tampilkan skills dalam dua kolom pada layar kecil */
+    }
+
+    .card-skill img {
+        width: 40px; /* Sesuaikan ukuran gambar skills */
+        height: 70px; /* Sesuaikan ukuran gambar skills */
+    }
+
+    .container-projek {
+        flex-direction: column; /* Tampilkan projek dalam satu kolom pada layar kecil */
+        align-items: center;
+    }
+
+    .card-projek {
+        width: 90%; /* Sesuaikan lebar kartu projek */
+    }
+
+    .kontak-form, .kontak-bio {
+        padding: 20px; /* Sesuaikan padding di bagian kontak */
+    }
+
+    .profile-kontak {
+        width: 80px; /* Sesuaikan lebar gambar profil */
+        height: 80px; /* Sesuaikan tinggi gambar profil */
+    }
+}
+
+/* Untuk layar dengan lebar maksimum 576px (perangkat mobile) */
+@media screen and (max-width: 576px) {
+    nav {
+        padding: 10px; /* Sesuaikan padding navigasi */
+        gap: 10px; /* Sesuaikan jarak antar elemen navigasi */
+        font-size: 14px; /* Sesuaikan ukuran font navigasi */
+    }
+
+    .hero .container {
+        padding-top: 60px; /* Sesuaikan jarak padding atas di bagian hero */
+    }
+
+    .hero h1 {
+        font-size: 40px; /* Sesuaikan ukuran font di bagian hero */
+    }
+
+    .about .container {
+        padding: 30px; /* Sesuaikan padding di bagian about */
+    }
+
+    .about h2 {
+        font-size: 24px; /* Sesuaikan ukuran font h2 di bagian about */
+    }
+
+    .about p {
+        font-size: 12px; /* Sesuaikan ukuran font paragraf di bagian about */
+    }
+
+    .container-skills {
+        grid-template-columns: repeat(1, 1fr); /* Tampilkan skills dalam satu kolom pada layar kecil */
+    }
+
+    .card-skill img {
+        width: 30px; /* Sesuaikan ukuran gambar skills */
+        height: 50px; /* Sesuaikan ukuran gambar skills */
+    }
+
+    .container-projek {
+        flex-direction: column; /* Tampilkan projek dalam satu kolom pada layar kecil */
+        align-items: center;
+    }
+
+    .card-projek {
+        width: 90%; /* Sesuaikan lebar kartu projek */
+    }
+
+    .kontak-form, .kontak-bio {
+        padding: 15px; /* Sesuaikan padding di bagian kontak */
+    }
+
+    .profile-kontak {
+        width: 60px; /* Sesuaikan lebar gambar profil */
+        height: 60px; /* Sesuaikan tinggi gambar profil */
+    }
+}
