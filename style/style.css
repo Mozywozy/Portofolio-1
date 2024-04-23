@@ -457,26 +457,6 @@ tr:nth-child(odd){
     background-color: #f7f7f7;
 }
 
-.kontak-bio:hover .card-contact {
-    animation: shake 0.5s ease;
-    animation: scaleAndBorder 0.3s ease forwards;
-    border: 2px solid #000;
-}
-
-@keyframes scaleAndBorder {
-    0% { transform: scale(1); }
-    100% { transform: scale(1.1); }
-}
-
-.kontak-form .card-contact {
-    transition: transform 0.3s ease, border 0.3s ease;
-}
-
-.kontak-form .card-contact:hover {
-    transform: scale(1.1);
-    border: 2px solid #000;
-}
-
 @media screen and (max-width: 768px) {
     .kontak-form, .kontak-bio {
         flex-basis: 100%; /* Menggunakan 100% lebar pada layar kecil */
